@@ -30,14 +30,14 @@ public class JewelryApp {
         frame.setLayout(null);
 
         // Set background image
-        TransparentBackgroundPanel background = new TransparentBackgroundPanel("images/silver_bg.png", 1f);
+        TransparentBackgroundPanel background = new TransparentBackgroundPanel("./silver_bg.png", 1f);
         background.setBounds(0, 0, 600, 700);
         frame.setContentPane(background);
 
 
         ImageIcon logoIcon = null;
         try {
-            logoIcon = new ImageIcon("images/logo.png");
+            logoIcon = new ImageIcon("./logo.png");
             // Change this if using another name or path
             Image img = logoIcon.getImage().getScaledInstance(60, 60, Image.SCALE_SMOOTH);
             logoIcon = new ImageIcon(img);
